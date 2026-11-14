@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>com.danshipper.phonerecordings</string>
+<key>CFBundleName</key><string>PhoneRecordings</string>
+<key>CFBundleDisplayName</key><string>PhoneRecordings</string>
+<key>CFBundleExecutable</key><string>PhoneRecordings</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>CFBundleShortVersionString</key><string>1.0</string>
+<key>LSUIElement</key><true/>
+<key>LSMinimumSystemVersion</key><string>26.0</string>
+<key>NSPhotoLibraryUsageDescription</key><string>PhoneRecordings reads your photo library (it never changes it) to find screen recordings from your iPhone and pass the ones where you ask for something to your dot.</string>
+<key>NSSpeechRecognitionUsageDescription</key><string>PhoneRecordings transcribes what you say in a screen recording, on this Mac.</string>
+</dict></plist>
