@@ -1,4 +1,4 @@
-// PhoneRecordings: watches Photos for screen recordings made on the owner's iPhone and, when one is them asking an
+// AgentDispatch: watches Photos for screen recordings made on the owner's iPhone and, when one is them asking an
 // agent to do something, sends it to their ChatGPT dot through Clipshot.
 //
 //   run      [--dry-run] [--since ISO]               one pass: find new recordings, write them up, judge, send. The LaunchAgent runs this.
@@ -110,7 +110,7 @@ func run() async -> Int32 {
     let lock = RunLock()
     guard lock.acquire() else { return 0 } // another pass is still going
     guard Library.authorize() else {
-        Log.line("No access to Photos. Allow PhoneRecordings in System Settings › Privacy & Security › Photos.")
+        Log.line("No access to Photos. Allow AgentDispatch in System Settings › Privacy & Security › Photos.")
         return 1
     }
     let dryRun = flag("--dry-run")

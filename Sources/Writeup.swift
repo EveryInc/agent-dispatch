@@ -267,7 +267,7 @@ enum Writeup {
         let manifest: [String: Any] = [
             "schema": schema,
             "id": directory.lastPathComponent,
-            "recorded_with": "iPhone screen recording, brought in from Photos by PhoneRecordings",
+            "recorded_with": "iPhone screen recording, brought in from Photos by AgentDispatch",
             "recorded_by": NSFullUserName(),
             "source": ["device": "iPhone", "photos_filename": source] as [String: Any],
             "started_at": ISO8601DateFormatter().string(from: extract.started),

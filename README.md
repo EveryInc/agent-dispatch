@@ -1,4 +1,4 @@
-# PhoneRecordings
+# agent-dispatch
 
 Record your iPhone's screen, talk over it, and an agent does what you asked.
 
@@ -51,17 +51,17 @@ send gives the dot the notes, stills and a link to the video.
 ./install.sh uninstall   # stop it
 ```
 
-The first run asks for access to Photos. Log and state are in `~/Library/Application Support/PhoneRecordings/`.
+The first run asks for access to Photos. Log and state are in `~/Library/Application Support/AgentDispatch/`.
 
 Try the pipeline on any movie, without Photos and without sending anything:
 
 ```bash
-build/PhoneRecordings.app/Contents/MacOS/PhoneRecordings process --file movie.mp4 --recordings /tmp/out --support /tmp/sup
+build/AgentDispatch.app/Contents/MacOS/AgentDispatch process --file movie.mp4 --recordings /tmp/out --support /tmp/sup
 ```
 
 `--no-model` uses the plain rule instead of Claude; `--send --test` sends the result marked as a test.
 
-Anything that reads Photos has to be started as the app (`open -n -W build/PhoneRecordings.app --args list`)
+Anything that reads Photos has to be started as the app (`open -n -W build/AgentDispatch.app --args list`)
 or by the LaunchAgent. Run from a terminal, macOS attributes the Photos request to the terminal instead.
 
 A skipped recording stays in `~/Recordings`, so one the judge got wrong can still be sent by hand.

@@ -47,7 +47,7 @@ enum Library {
         let resources = PHAssetResource.assetResources(for: asset)
         // A trimmed recording has a full-size version; otherwise the original.
         guard let resource = resources.first(where: { $0.type == .fullSizeVideo }) ?? resources.first(where: { $0.type == .video }) else {
-            throw NSError(domain: "PhoneRecordings", code: 1, userInfo: [NSLocalizedDescriptionKey: "The asset has no video file"])
+            throw NSError(domain: "AgentDispatch", code: 1, userInfo: [NSLocalizedDescriptionKey: "The asset has no video file"])
         }
         let raw = directory.appendingPathComponent("original-" + resource.originalFilename)
         try? FileManager.default.removeItem(at: raw)
@@ -80,6 +80,6 @@ enum Library {
                 if preset == AVAssetExportPresetHighestQuality { throw error }
             }
         }
-        throw NSError(domain: "PhoneRecordings", code: 2, userInfo: [NSLocalizedDescriptionKey: "Could not convert the recording to MP4"])
+        throw NSError(domain: "AgentDispatch", code: 2, userInfo: [NSLocalizedDescriptionKey: "Could not convert the recording to MP4"])
     }
 }

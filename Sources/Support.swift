@@ -4,7 +4,7 @@ import Foundation
 enum Paths {
     static let home = FileManager.default.homeDirectoryForCurrentUser
     /// State, log and lock. Tests point this somewhere disposable with --support.
-    static var support = home.appendingPathComponent("Library/Application Support/PhoneRecordings", isDirectory: true)
+    static var support = home.appendingPathComponent("Library/Application Support/AgentDispatch", isDirectory: true)
     static var state: URL { support.appendingPathComponent("state.json") }
     static var log: URL { support.appendingPathComponent("watcher.log") }
     static var lock: URL { support.appendingPathComponent("lock") }
