@@ -1,5 +1,8 @@
 # agent-dispatch
 
+[![Every Frontier: Experiment](https://frontier.every.to/badge/experiment.svg)](https://frontier.every.to/experiments/an-iphone-screen-recording-is-now-how-i-hand-work-to-my-agent?utm_source=frontier&utm_medium=readme&utm_content=agent-dispatch_badge)
+[![Subscribe to Every](https://frontier.every.to/badge/subscribe.svg)](https://every.to/subscribe?utm_source=frontier&utm_medium=readme&utm_content=agent-dispatch_subscribe)
+
 Record your iPhone's screen, talk over it, and an agent does what you asked.
 
 A small Mac app that watches Photos for screen recordings made on your iPhone. When one is you talking over
@@ -65,3 +68,5 @@ Anything that reads Photos has to be started as the app (`open -n -W build/Agent
 or by the LaunchAgent. Run from a terminal, macOS attributes the Photos request to the terminal instead.
 
 A skipped recording stays in `~/Recordings`, so one the judge got wrong can still be sent by hand.
+
+[![Every Frontier. Made by Every's Frontier team. Subscribe to Every](https://frontier.every.to/badge/strip.svg)](https://every.to/subscribe?utm_source=frontier&utm_medium=readme&utm_content=agent-dispatch_footer)
